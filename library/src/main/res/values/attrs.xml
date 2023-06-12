@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AutofitDirectionTextView">
+        <!--    文本最小的size   -->
+        <attr name="minTextSize" format="dimension" />
+        <!--    用于计算正确文本大小的精确度，以适应其范围。较低的精度更精确，需要更多的时间  -->
+        <attr name="precision" format="float" />
+        <!--    定义是否自动调整文本大小以适应视图的边界    -->
+        <attr name="sizeToFit" format="boolean" />
+        <!--    根据 宽度/高度/宽度和高度 调整文本大小       -->
+        <attr name="adaptDirection" format="enum">
+            <enum name="width" value="0"/>
+            <enum name="height" value="1"/>
+            <enum name="both" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>
